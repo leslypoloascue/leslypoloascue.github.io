@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escuela Profesional de Ingeniería de Sistemas e Informática</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    header {
+      background-color: #000000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 5px;
+    }
+    nav a:hover {
+      background-color: #666;
+    }
+    section {
+      padding: 20px;
+    }
+    footer {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    h2 {
+      color: #333;
+    }
+    p {
+      color: #555;
+    }
+    .highlight {
+      background-color: #ffc107;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/logoc.jpg" alt="Logo de la Escuela" width="150">
+    <h3>UNIVERSIDAD CONTINENTAL</h3>
+    <h1>Escuela Profesional de Ingeniería de Sistemas e Informática</h1>
+    <p>Formando profesionales en tecnología</p>
+  </header>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#convenios">Convenios</a>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#carreras">Carreras</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#solicita">Solicita Informacion</a>
+  </nav>
+  <section id="inicio">
+    <h2>Bienvenido a al Universidad</h2>
+    <p>Somos la universidad mas  dedicada a la formación educativa que se centra en la experiencia y la practica , con profesores especializados en el campo y acuerdos internacionales que se ofrece para la carrera profesional.</p>
+    <p>Ofrecemos programas académicos de alta calidad y contamos con un cuerpo docente altamente capacitado.</p>
+    <img src="images/bienvenido.jpeg" alt="universidad" width="400">
+  </section>
+  <section id="convenios">
+    <h1>Convenios</h1>
+    <h2>Conoce nuestros</h2>
+    <p>convenios Internacionales:</p>
+    <ul>
+      <li>Universidad del Oeste de Santa Catarina</li>
+         <img src="images/brasil.jpg" alt="convenios" width="400">
+      <p>Brasil</p>
+      <li>Universidad Andres Bello</li>
+         <img src="images/chile.png" alt="convenios" width="400">
+      <p>Chile</p>
+      <li>Universidad Central de Chile</li>
+         <img src="images/central.png" alt="convenios" width="400">
+      <p>Chile</p>
+      <li>Universidad Autonoma de Mexico</li>
+         <img src="images/mexico.png" alt="convenios" width="400">
+      <p>Mexico</p>
+    </ul>
+  </section>
+   <section id="beneficios">
+    <h1>Beneficios</h1>
+     <p>Al elegir la carrera de Ingeniería de Sistemas e Informática en la Universidad Continental, tendrás acceso a una amplia variedad de convenios y servicios diseñados para impulsar tu desarrollo académico y profesional de la mejor manera. Con estos recursos, mejorarás tus conocimientos y también te ayudarán a expandir tus habilidades personales y a posicionar tu empleabilidad.</p>
+    <ul>
+      <h2>CISCO:</h2>
+      <li>Microsoft</li>
+         <img src="images/microsoft.png" alt="beneficios" width="400">
+      <li>IBM</li>
+         <img src="images/ibm.jpeg" alt="beneficios" width="400">
+      <li>Oracle Academy</li>
+         <img src="images/oracle.png" alt="beneficios" width="400">
+      <li>PMI</li>
+         <img src="images/pmi.png" alt="beneficios" width="400">
+      <h2>Convenios a nivel nacional e internacional:</h2>
+      <li>Alianza Universitaria SAP</li>
+         <img src="images/sap.jpeg" alt="beneficios" width="400">
+    </ul>
+  </section>
+  <section id="carreras">
+    <h2>Carreras Similares</h2>
+    <h2>Conoce nuestros</h2>
+    <li>Ingenieria Ambiental</li>
+     <img src="images/ambiental.jpg" alt="carreras" width="400">
+    <li>Ingenieria de Minas</li>
+     <img src="images/minas.jpeg" alt="carreras" width="400">
+    <li>Ingenieria Mecatronica</li>
+     <img src="images/mecatronica.jpg" alt="carreras" width="400">
+    <li>Ingenieria Mecanica</li>
+     <img src="images/mecanica.jpeg" alt="carreras" width="400">
+    <li>Ingenieria Empresarial</li>
+     <img src="images/empresarial.jpeg" alt="carreras" width="400">
+    <li>Ingenieria Electronica</li>
+     <img src="images/electronica.jpeg" alt="carreras" width="400">
+    <li>Ingenieria Civil</li>
+     <img src="images/civil.jpg" alt="carreras" width="400">
+   </section>
+      <section id="solicita">
+        <h1>Solicita Información</h1>
+         <img src="images/seccion.jpg" alt="carreras" width="400">
+        <form action="enviar_datos.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+     </section>
+   <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes contactarnos en:</p>
+        <address>
+            Dirección: Sector de Angostura km. 10 San Jeronimo<br>
+            Teléfono: 084 480070<br>
+            Informes: Ca. Manuel prado B-7, Collasuyo<br>
+        </address>
+         </section>
+</body>
+</html>
